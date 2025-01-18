@@ -40,3 +40,39 @@
 {"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T09:20:43.256Z"}
 {"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-01-18T09:20:47.230Z"}
 {"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T09:20:47.231Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-01-18T11:24:28.368Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T11:24:28.368Z"}
+{"level":"info","message":"Create post endpoint hit","service":"post-service","timestamp":"2025-01-18T11:24:28.369Z"}
+{"level":"info","message":"Event published: post.created","service":"post-service","timestamp":"2025-01-18T11:24:30.235Z"}
+{"$__":{"$versionError":null,"activePaths":{"paths":{"content":"require","user":"require"},"states":{"default":{},"modify":{},"require":{"content":true,"user":true}}},"backup":{"activePaths":{"default":{"_id":true,"createdAt":true},"modify":{"content":true,"mediaIds":true,"updatedAt":true,"user":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"pathsToScopes":{"mediaIds":{"__v":0,"_id":"678b8f6c54687dd3943d35f6","content":"Good morning\nAm find and you","createdAt":"2025-01-18T11:24:28.372Z","mediaIds":["zy7jkyqpxyqvs6jxjzzk","wzhrheg0ycaltovawel1"],"updatedAt":"2025-01-18T11:24:28.372Z","user":"678a9a8b6bd06253b40980c0"}},"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"678b8f6c54687dd3943d35f6","content":"Good morning\nAm find and you","createdAt":"2025-01-18T11:24:28.372Z","mediaIds":["zy7jkyqpxyqvs6jxjzzk","wzhrheg0ycaltovawel1"],"updatedAt":"2025-01-18T11:24:28.372Z","user":"678a9a8b6bd06253b40980c0"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-01-18T11:24:30.615Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-01-18T11:32:57.542Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T11:32:57.543Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"post-service","timestamp":"2025-01-18T20:57:53.084Z"}
+{"level":"info","message":"Post service running on port 3002","service":"post-service","timestamp":"2025-01-18T20:57:53.090Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-01-18T20:57:55.715Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-01-18T21:27:22.831Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T21:27:22.833Z"}
+{"level":"info","message":"Received DELETE request to /api/posts/678b651854687dd3943d35eb","service":"post-service","timestamp":"2025-01-18T21:28:16.343Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T21:28:16.346Z"}
+{"level":"info","message":"Event published: post.deleted","service":"post-service","timestamp":"2025-01-18T21:28:16.733Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-01-18T21:28:27.466Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T21:28:27.469Z"}
+{"level":"info","message":"Received DELETE request to /api/posts/678b8f6c54687dd3943d35f6","service":"post-service","timestamp":"2025-01-18T21:29:16.726Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T21:29:16.728Z"}
+{"level":"info","message":"Event published: post.deleted","service":"post-service","timestamp":"2025-01-18T21:29:16.951Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-01-18T21:29:24.475Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T21:29:24.477Z"}
+{"level":"info","message":"Received DELETE request to /api/posts/678b8f6c54687dd3943d35f6","service":"post-service","timestamp":"2025-01-18T21:33:39.699Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T21:33:39.701Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-01-18T21:33:57.268Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T21:33:57.271Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-01-18T21:37:23.343Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T21:37:23.343Z"}
+{"level":"info","message":"Create post endpoint hit","service":"post-service","timestamp":"2025-01-18T21:37:23.345Z"}
+{"level":"info","message":"Event published: post.created","service":"post-service","timestamp":"2025-01-18T21:37:24.243Z"}
+{"$__":{"$versionError":null,"activePaths":{"paths":{"content":"require","user":"require"},"states":{"default":{},"modify":{},"require":{"content":true,"user":true}}},"backup":{"activePaths":{"default":{"_id":true,"createdAt":true},"modify":{"content":true,"mediaIds":true,"updatedAt":true,"user":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"pathsToScopes":{"mediaIds":{"__v":0,"_id":"678c1f13c6ad73bc0300e05b","content":"Good morning\nAm find and you","createdAt":"2025-01-18T21:37:23.364Z","mediaIds":["678b8d2efe74914261f9e6e3","678c1a0bfe74914261f9e6e7"],"updatedAt":"2025-01-18T21:37:23.364Z","user":"678a9a8b6bd06253b40980c0"}},"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"__v":0,"_id":"678c1f13c6ad73bc0300e05b","content":"Good morning\nAm find and you","createdAt":"2025-01-18T21:37:23.364Z","mediaIds":["678b8d2efe74914261f9e6e3","678c1a0bfe74914261f9e6e7"],"updatedAt":"2025-01-18T21:37:23.364Z","user":"678a9a8b6bd06253b40980c0"},"level":"info","message":"Post created successfully","service":"post-service","timestamp":"2025-01-18T21:37:25.721Z"}
+{"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-01-18T21:37:45.206Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T21:37:45.209Z"}
+{"level":"info","message":"Received DELETE request to /api/posts/678c1f13c6ad73bc0300e05b","service":"post-service","timestamp":"2025-01-18T21:38:13.077Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-18T21:38:13.079Z"}
+{"level":"info","message":"Event published: post.deleted","service":"post-service","timestamp":"2025-01-18T21:38:14.040Z"}
