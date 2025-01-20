@@ -49,3 +49,18 @@
 {"level":"info","message":"Processed deletion of media for post id 678c1f13c6ad73bc0300e05b","service":"media-service","timestamp":"2025-01-18T21:38:17.027Z"}
 {"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-01-18T21:38:22.184Z"}
 {"level":"info","message":"Request body, [object Object]","service":"media-service","timestamp":"2025-01-18T21:38:22.187Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-01-20T04:21:49.591Z"}
+{"level":"info","message":"Request body, [object Object]","service":"media-service","timestamp":"2025-01-20T04:21:49.596Z"}
+{"level":"info","message":"Received POST request to /api/media/upload","service":"media-service","timestamp":"2025-01-20T04:23:48.664Z"}
+{"level":"info","message":"Request body, [object Object]","service":"media-service","timestamp":"2025-01-20T04:23:48.664Z"}
+{"level":"info","message":"Starting media upload","service":"media-service","timestamp":"2025-01-20T04:23:48.667Z"}
+{"level":"info","message":"File details: name=Pure_Drive-1.avif, type=image/avif","service":"media-service","timestamp":"2025-01-20T04:23:48.669Z"}
+{"level":"info","message":"Uploading to cloudinary starting...","service":"media-service","timestamp":"2025-01-20T04:23:48.670Z"}
+{"level":"info","message":"Cloudinary upload successfully. Public Id: - ch9eujyrrhhlc7xrbhvl","service":"media-service","timestamp":"2025-01-20T04:23:52.448Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-01-20T04:25:10.681Z"}
+{"level":"info","message":"Request body, [object Object]","service":"media-service","timestamp":"2025-01-20T04:25:10.682Z"}
+{"level":"info","message":"Received GET request to /api/media/get","service":"media-service","timestamp":"2025-01-20T07:48:51.298Z"}
+{"level":"info","message":"Request body, [object Object]","service":"media-service","timestamp":"2025-01-20T07:48:51.299Z"}
+{"0":"c","1":"h","10":"h","11":"l","12":"c","13":"7","14":"x","15":"r","16":"b","17":"h","18":"v","19":"l","2":"9","3":"e","4":"u","5":"j","6":"y","7":"r","8":"r","9":"h","level":"info","message":"Media deleted successfuly from cloud stroage","service":"media-service","timestamp":"2025-01-20T07:57:01.008Z"}
+{"level":"info","message":"Deleted medua 678dcfd8fe74914261f9e6f2 associated with this deleted post 678e0089ddf7a5985449f4b6","service":"media-service","timestamp":"2025-01-20T07:57:01.518Z"}
+{"level":"info","message":"Processed deletion of media for post id 678e0089ddf7a5985449f4b6","service":"media-service","timestamp":"2025-01-20T07:57:01.520Z"}
