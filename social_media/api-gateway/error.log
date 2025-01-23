@@ -1,1 +1,6 @@
 {"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-01-18T07:27:09.820Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-01-18T11:16:26.718Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-01-18T11:17:06.128Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-01-18T21:05:51.815Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gateway","timestamp":"2025-01-20T08:15:04.753Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-01-20T08:16:58.817Z"}
