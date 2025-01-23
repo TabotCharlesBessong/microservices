@@ -10,7 +10,7 @@ services:
       - redis
       - rabbitmq
     environment:
-      - REDIS_URL=rediss://default:AVAuAAIjcDFmZGRhZmU1YjMxZTk0NDEyOTU1NjJmMTkwY2M5ZWNmZHAxMA@winning-foxhound-20526.upstash.io:6379
+      - REDIS_URL=replace with redis url
       - RABBITMQ_URL=amqp://rabbitmq:5672
 
   identity-service:
@@ -20,7 +20,7 @@ services:
       - redis
       - rabbitmq
     environment:
-      - REDIS_URL=rediss://default:AVAuAAIjcDFmZGRhZmU1YjMxZTk0NDEyOTU1NjJmMTkwY2M5ZWNmZHAxMA@winning-foxhound-20526.upstash.io:6379
+      - REDIS_URL=replace with redis url
       - RABBITMQ_URL=amqp://rabbitmq:5672
 
   post-service:
@@ -30,7 +30,7 @@ services:
       - redis
       - rabbitmq
     environment:
-      - REDIS_URL=rediss://default:AVAuAAIjcDFmZGRhZmU1YjMxZTk0NDEyOTU1NjJmMTkwY2M5ZWNmZHAxMA@winning-foxhound-20526.upstash.io:6379
+      - REDIS_URL=replace with redis url
       - RABBITMQ_URL=amqp://rabbitmq:5672
 
   media-service:
@@ -40,7 +40,7 @@ services:
       - redis
       - rabbitmq
     environment:
-      - REDIS_URL=rediss://default:AVAuAAIjcDFmZGRhZmU1YjMxZTk0NDEyOTU1NjJmMTkwY2M5ZWNmZHAxMA@winning-foxhound-20526.upstash.io:6379
+      - REDIS_URL=replace with redis url
       - RABBITMQ_URL=amqp://rabbitmq:5672
 
   search-service:
@@ -50,7 +50,7 @@ services:
       - redis
       - rabbitmq
     environment:
-      - REDIS_URL=rediss://default:AVAuAAIjcDFmZGRhZmU1YjMxZTk0NDEyOTU1NjJmMTkwY2M5ZWNmZHAxMA@winning-foxhound-20526.upstash.io:6379
+      - REDIS_URL=replace with redis url
       - RABBITMQ_URL=amqp://rabbitmq:5672
 
   redis:
