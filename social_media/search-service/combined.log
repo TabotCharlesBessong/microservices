@@ -1,0 +1,62 @@
+{"level":"error","message":"Mongo connection error The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.","service":"post-service","stack":"MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n    at NativeConnection.createClient (D:\\charlesDevelopment\\microservices\\social_media\\search-service\\node_modules\\.pnpm\\mongoose@8.9.5\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\connection.js:225:11)\n    at NativeConnection.openUri (D:\\charlesDevelopment\\microservices\\social_media\\search-service\\node_modules\\.pnpm\\mongoose@8.9.5\\node_modules\\mongoose\\lib\\connection.js:1016:34)\n    at Mongoose.connect (D:\\charlesDevelopment\\microservices\\social_media\\search-service\\node_modules\\.pnpm\\mongoose@8.9.5\\node_modules\\mongoose\\lib\\mongoose.js:446:15)\n    at Object.<anonymous> (D:\\charlesDevelopment\\microservices\\social_media\\search-service\\src\\server.js:21:4)\n    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n    at Object..js (node:internal/modules/cjs/loader:1689:10)\n    at Module.load (node:internal/modules/cjs/loader:1318:32)\n    at Function._load (node:internal/modules/cjs/loader:1128:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)","timestamp":"2025-01-18T21:50:33.221Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"post-service","timestamp":"2025-01-18T21:50:33.267Z"}
+{"level":"info","message":"Subscribed to event: post.created","service":"post-service","timestamp":"2025-01-18T21:50:33.288Z"}
+{"level":"info","message":"Subscribed to event: post.deleted","service":"post-service","timestamp":"2025-01-18T21:50:33.300Z"}
+{"level":"info","message":"Search service is running on port: 3004","service":"post-service","timestamp":"2025-01-18T21:50:33.307Z"}
+{"level":"error","message":"Mongo connection error The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.","service":"post-service","stack":"MongooseError: The `uri` parameter to `openUri()` must be a string, got \"undefined\". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.\n    at NativeConnection.createClient (D:\\charlesDevelopment\\microservices\\social_media\\search-service\\node_modules\\.pnpm\\mongoose@8.9.5\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\connection.js:225:11)\n    at NativeConnection.openUri (D:\\charlesDevelopment\\microservices\\social_media\\search-service\\node_modules\\.pnpm\\mongoose@8.9.5\\node_modules\\mongoose\\lib\\connection.js:1016:34)\n    at Mongoose.connect (D:\\charlesDevelopment\\microservices\\social_media\\search-service\\node_modules\\.pnpm\\mongoose@8.9.5\\node_modules\\mongoose\\lib\\mongoose.js:446:15)\n    at Object.<anonymous> (D:\\charlesDevelopment\\microservices\\social_media\\search-service\\src\\server.js:21:4)\n    at Module._compile (node:internal/modules/cjs/loader:1546:14)\n    at Object..js (node:internal/modules/cjs/loader:1689:10)\n    at Module.load (node:internal/modules/cjs/loader:1318:32)\n    at Function._load (node:internal/modules/cjs/loader:1128:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:315:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)","timestamp":"2025-01-20T04:01:38.389Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"post-service","timestamp":"2025-01-20T04:01:38.422Z"}
+{"level":"info","message":"Subscribed to event: post.created","service":"post-service","timestamp":"2025-01-20T04:01:38.436Z"}
+{"level":"info","message":"Subscribed to event: post.deleted","service":"post-service","timestamp":"2025-01-20T04:01:38.445Z"}
+{"level":"info","message":"Search service is running on port: 3004","service":"post-service","timestamp":"2025-01-20T04:01:38.450Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"post-service","timestamp":"2025-01-20T04:36:10.329Z"}
+{"level":"info","message":"Subscribed to event: post.created","service":"post-service","timestamp":"2025-01-20T04:36:10.341Z"}
+{"level":"info","message":"Subscribed to event: post.deleted","service":"post-service","timestamp":"2025-01-20T04:36:10.349Z"}
+{"level":"info","message":"Search service is running on port: 3004","service":"post-service","timestamp":"2025-01-20T04:36:10.352Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-01-20T04:37:06.938Z"}
+{"level":"info","message":"Search post created: 678e0037ddf7a5985449f4b0, 678e003954656b3918d1788c","service":"post-service","timestamp":"2025-01-20T07:50:18.698Z"}
+{"level":"info","message":"Search post created: 678e006eddf7a5985449f4b4, 678e006e54656b3918d1788e","service":"post-service","timestamp":"2025-01-20T07:51:10.606Z"}
+{"level":"info","message":"Search post created: 678e0089ddf7a5985449f4b6, 678e008a54656b3918d17890","service":"post-service","timestamp":"2025-01-20T07:51:38.356Z"}
+{"level":"info","message":"Search post deleted: 678e0089ddf7a5985449f4b6}","service":"post-service","timestamp":"2025-01-20T07:56:58.973Z"}
+{"level":"info","message":"Search post created: 678e021dddf7a5985449f4bb, 678e021e54656b3918d17893","service":"post-service","timestamp":"2025-01-20T07:58:22.310Z"}
+{"level":"info","message":"Received GET request to /api/search/posts","service":"post-service","timestamp":"2025-01-20T08:15:04.429Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-20T08:15:04.431Z"}
+{"level":"info","message":"Search endpoint hit!","service":"post-service","timestamp":"2025-01-20T08:15:04.433Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"post-service","timestamp":"2025-01-20T08:17:34.691Z"}
+{"level":"info","message":"Subscribed to event: post.created","service":"post-service","timestamp":"2025-01-20T08:17:34.702Z"}
+{"level":"info","message":"Subscribed to event: post.deleted","service":"post-service","timestamp":"2025-01-20T08:17:34.711Z"}
+{"level":"info","message":"Search service is running on port: 3004","service":"post-service","timestamp":"2025-01-20T08:17:34.715Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-01-20T08:17:38.991Z"}
+{"level":"info","message":"Received GET request to /api/search/posts?query=Babolat","service":"post-service","timestamp":"2025-01-20T08:17:40.154Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-20T08:17:40.158Z"}
+{"level":"info","message":"Search endpoint hit!","service":"post-service","timestamp":"2025-01-20T08:17:40.162Z"}
+{"level":"info","message":"Received GET request to /api/search/posts?query=Babolat%20Rackets","service":"post-service","timestamp":"2025-01-20T08:17:53.849Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-20T08:17:53.853Z"}
+{"level":"info","message":"Search endpoint hit!","service":"post-service","timestamp":"2025-01-20T08:17:53.857Z"}
+{"level":"info","message":"Received GET request to /api/search/posts?query=3%20Babolat%20Rackets","service":"post-service","timestamp":"2025-01-20T08:18:02.745Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-20T08:18:02.747Z"}
+{"level":"info","message":"Search endpoint hit!","service":"post-service","timestamp":"2025-01-20T08:18:02.749Z"}
+{"level":"info","message":"Received GET request to /api/search/posts?query=Good%20Morning","service":"post-service","timestamp":"2025-01-20T08:18:19.361Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-20T08:18:19.363Z"}
+{"level":"info","message":"Search endpoint hit!","service":"post-service","timestamp":"2025-01-20T08:18:19.364Z"}
+{"level":"info","message":"Received GET request to /api/search/posts?query=Good%20morning","service":"post-service","timestamp":"2025-01-20T08:18:49.647Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-20T08:18:49.648Z"}
+{"level":"info","message":"Search endpoint hit!","service":"post-service","timestamp":"2025-01-20T08:18:49.649Z"}
+{"level":"info","message":"Received GET request to /api/search/posts?query=%20good","service":"post-service","timestamp":"2025-01-20T08:19:03.902Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-20T08:19:03.904Z"}
+{"level":"info","message":"Search endpoint hit!","service":"post-service","timestamp":"2025-01-20T08:19:03.907Z"}
+{"level":"info","message":"Received GET request to /api/search/posts?query=%20sale","service":"post-service","timestamp":"2025-01-20T08:19:10.100Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-20T08:19:10.102Z"}
+{"level":"info","message":"Search endpoint hit!","service":"post-service","timestamp":"2025-01-20T08:19:10.103Z"}
+{"level":"info","message":"Received GET request to /api/search/posts?query=%20you%20doing","service":"post-service","timestamp":"2025-01-20T08:19:29.621Z"}
+{"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-20T08:19:29.624Z"}
+{"level":"info","message":"Search endpoint hit!","service":"post-service","timestamp":"2025-01-20T08:19:29.626Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"post-service","timestamp":"2025-01-20T10:39:47.897Z"}
+{"level":"info","message":"Subscribed to event: post.created","service":"post-service","timestamp":"2025-01-20T10:39:47.909Z"}
+{"level":"info","message":"Subscribed to event: post.deleted","service":"post-service","timestamp":"2025-01-20T10:39:47.920Z"}
+{"level":"info","message":"Search service is running on port: 3004","service":"post-service","timestamp":"2025-01-20T10:39:47.925Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-01-20T10:39:54.097Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"post-service","timestamp":"2025-01-20T10:44:10.619Z"}
+{"level":"info","message":"Subscribed to event: post.created","service":"post-service","timestamp":"2025-01-20T10:44:10.628Z"}
+{"level":"info","message":"Subscribed to event: post.deleted","service":"post-service","timestamp":"2025-01-20T10:44:10.634Z"}
+{"level":"info","message":"Search service is running on port: 3004","service":"post-service","timestamp":"2025-01-20T10:44:10.641Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-01-20T10:44:18.105Z"}

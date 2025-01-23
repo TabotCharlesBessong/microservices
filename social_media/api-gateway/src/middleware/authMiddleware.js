@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const logger = require("../utils/logger");
 const jwt = require("jsonwebtoken");
 
@@ -15,10 +17,11 @@ const validateToken = (req, res, next) => {
 
   jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
     if (err) {
-      logger.warn("Invalid token!");
+      logger.warn("Invalid token!",err);
       return res.status(429).json({
         message: "Invalid token!",
         success: false,
+        err
       });
     }
 
