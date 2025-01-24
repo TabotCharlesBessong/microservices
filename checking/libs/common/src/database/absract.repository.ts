@@ -6,6 +6,7 @@ import {
   UpdateQuery,
   SaveOptions,
   Connection,
+  ClientSession,
 } from 'mongoose';
 import { AbstractDocument } from './abstract.schema';
 
@@ -25,9 +26,8 @@ export abstract class AbstractRepository<TDocument extends AbstractDocument> {
       ...document,
       _id: new Types.ObjectId(),
     });
-    return (
-      await createdDocument.save(options)
-    ).toJSON() as unknown as TDocument;
+    const savedDocument = await createdDocument.save(options);
+    return savedDocument.toObject() as TDocument; // Convert to plain object and cast
   }
 
   async findOne(filterQuery: FilterQuery<TDocument>): Promise<TDocument> {
@@ -38,7 +38,7 @@ export abstract class AbstractRepository<TDocument extends AbstractDocument> {
       throw new NotFoundException('Document not found.');
     }
 
-    return document;
+    return document as TDocument;
   }
 
   async findOneAndUpdate(
@@ -55,25 +55,30 @@ export abstract class AbstractRepository<TDocument extends AbstractDocument> {
       throw new NotFoundException('Document not found.');
     }
 
-    return document;
+    return document as TDocument;
   }
 
   async upsert(
     filterQuery: FilterQuery<TDocument>,
     document: Partial<TDocument>,
-  ) {
-    return this.model.findOneAndUpdate(filterQuery, document, {
-      lean: true,
-      upsert: true,
-      new: true,
-    });
+  ): Promise<TDocument> {
+    const upsertedDocument = await this.model.findOneAndUpdate(
+      filterQuery,
+      document,
+      { lean: true, upsert: true, new: true },
+    );
+    return upsertedDocument as TDocument;
   }
 
-  async find(filterQuery: FilterQuery<TDocument>) {
-    return this.model.find(filterQuery, {}, { lean: true });
+  async find(filterQuery: FilterQuery<TDocument>): Promise<TDocument[]> {
+    return (await this.model.find(
+      filterQuery,
+      {},
+      { lean: true },
+    )) as TDocument[];
   }
 
-  async startTransaction() {
+  async startTransaction():Promise<ClientSession> {
     const session = await this.connection.startSession();
     session.startTransaction();
     return session;
