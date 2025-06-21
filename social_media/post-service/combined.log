@@ -114,3 +114,6 @@
 {"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-20T07:58:27.444Z"}
 {"level":"info","message":"Received GET request to /api/posts/all-posts","service":"post-service","timestamp":"2025-01-20T08:18:32.349Z"}
 {"level":"info","message":"Request body, [object Object]","service":"post-service","timestamp":"2025-01-20T08:18:32.350Z"}
+{"level":"info","message":"Connected to rabbit mq","service":"post-service","timestamp":"2025-04-03T16:54:45.817Z"}
+{"level":"info","message":"Post service running on port 3002","service":"post-service","timestamp":"2025-04-03T16:54:45.829Z"}
+{"level":"info","message":"Connected to mongodb","service":"post-service","timestamp":"2025-04-03T16:54:52.293Z"}

@@ -389,3 +389,9 @@
 {"level":"info","message":"Received GET request to /v1/search/posts?query=%20you%20doing","service":"api-gateway","timestamp":"2025-01-20T08:19:29.606Z"}
 {"level":"info","message":"Request body, [object Object]","service":"api-gateway","timestamp":"2025-01-20T08:19:29.608Z"}
 {"level":"info","message":"Response received from Search service: 200","service":"api-gateway","timestamp":"2025-01-20T08:19:29.866Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2025-04-03T16:53:50.051Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-04-03T16:53:50.057Z"}
+{"level":"info","message":"Post service is running on port http://localhost:3002","service":"api-gateway","timestamp":"2025-04-03T16:53:50.058Z"}
+{"level":"info","message":"Media service is running on port http://localhost:3003","service":"api-gateway","timestamp":"2025-04-03T16:53:50.059Z"}
+{"level":"info","message":"Search service is running on port http://localhost:3004","service":"api-gateway","timestamp":"2025-04-03T16:53:50.059Z"}
+{"level":"info","message":"Redis Url rediss://default:AVAuAAIjcDFmZGRhZmU1YjMxZTk0NDEyOTU1NjJmMTkwY2M5ZWNmZHAxMA@winning-foxhound-20526.upstash.io:6379","service":"api-gateway","timestamp":"2025-04-03T16:53:50.061Z"}
