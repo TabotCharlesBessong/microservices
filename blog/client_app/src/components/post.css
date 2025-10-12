@@ -25,3 +25,27 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-list li {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.list-group {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

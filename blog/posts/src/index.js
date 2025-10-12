@@ -11,8 +11,8 @@ const PORT = process.env.PORT || 5000;
 
 const posts = {}
 
-app.use(cors());
 app.use(bodyParser.json());
+app.use(cors());
 
 
 app.get('/posts', (req, res) => {
