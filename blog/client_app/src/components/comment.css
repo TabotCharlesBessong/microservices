@@ -1,0 +1,34 @@
+
+
+.comment-create-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.comment-create-container h3 {
+  margin-bottom: 10px;
+}
+
+.comment-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comment-list li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.comment-list li:last-child {
+  border-bottom: none;
+}
+.comment-list li p {
+  margin: 0;
+}
+
+.comment-list li .comment-author {
+  font-weight: bold;
+  margin-right: 10px;
+}

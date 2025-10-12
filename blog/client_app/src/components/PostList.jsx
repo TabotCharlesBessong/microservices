@@ -12,7 +12,7 @@ const PostList = () => {
     }
 
     fetchPosts()
-  }, [posts])
+  }, [])
 
   return (
     // add class name for styling

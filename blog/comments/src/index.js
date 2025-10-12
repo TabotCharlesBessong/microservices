@@ -29,6 +29,11 @@ app.post('/posts/:id/comments', (req, res) => {
   res.status(201).send({ message: 'Comment created', comments });
 });
 
+// fetch all comments
+app.get('/comments', (req, res) => {
+  res.send(commentsByPostId);
+});
+
 app.listen(PORT, () => {
   console.log(`Comments service running on port ${PORT}`);
 });
