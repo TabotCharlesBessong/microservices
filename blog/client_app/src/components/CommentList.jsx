@@ -2,34 +2,46 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 
-const CommentList = () => {
-  // fetching all comments from the comments service
-  // const comments = [
-  //   { id: '1', content: 'Great post!' },
-  //   { id: '2', content: 'Thanks for sharing.' }
-  // ]
-
-  // fetching with axios and adding useEffect and useState
+const CommentList = ({ postId }) => {
   const [comments, setComments] = useState([])
 
   useEffect(() => {
     const fetchComments = async () => {
-      const response = await axios.get('http://localhost:9000/comments')
-      setComments(response.data)
+      try {
+        // Fetch comments for the specific post
+        const response = await axios.get(`http://localhost:9000/posts/${postId}/comments`)
+        setComments(response.data)
+      } catch (error) {
+        console.error('Error fetching comments:', error)
+        setComments([])
+      }
     }
 
-    fetchComments()
-  }, [])
+    if (postId) {
+      fetchComments()
+    }
+  }, [postId])
+
+  if (!Array.isArray(comments) || comments.length === 0) {
+    return (
+      <div className="comment-list mt-3">
+        <h6>Comments</h6>
+        <p className="text-muted">No comments yet. Be the first to comment!</p>
+      </div>
+    )
+  }
 
   return (
-    <div>
-      <h2>Comments</h2>
-      <ul>
-        {/* getting an error, comments.map is not a function */}
-        {Array.isArray(comments) && comments.map(comment => (
-          <li key={comment.id}>{comment.content}</li>
+    <div className="comment-list mt-3">
+      <h6>Comments ({comments.length})</h6>
+      <div className="comments-container">
+        {comments.map(comment => (
+          <div key={comment.id} className="comment-item p-2 mb-2 border rounded">
+            <p className="mb-1">{comment.content}</p>
+            <small className="text-muted">Comment ID: {comment.id}</small>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }

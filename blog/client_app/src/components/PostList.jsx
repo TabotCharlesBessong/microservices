@@ -1,6 +1,7 @@
 
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import PostCard from './PostCard'
 
 const PostList = () => {
   const [posts, setPosts] = useState([])
@@ -15,14 +16,13 @@ const PostList = () => {
   }, [])
 
   return (
-    // add class name for styling
     <div className="post-list">
       <h1>Posts</h1>
-      <ul className='list-group'>
+      <div className="posts-container">
         {Object.values(posts).map(post => (
-          <li key={post.id} className='list-group-item'>{post.title}</li>
+          <PostCard key={post.id} post={post} />
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
