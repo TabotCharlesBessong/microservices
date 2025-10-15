@@ -9,9 +9,10 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const axios = require('axios');
 
-app.use(cors());
 app.use(bodyParser.json());
+app.use(cors());
 const commentsByPostId = {};
 
 app.get('/posts/:id/comments', (req, res) => {
@@ -26,7 +27,26 @@ app.post('/posts/:id/comments', (req, res) => {
   comments.push({ id: commentId, content });
   commentsByPostId[req.params.id] = comments;
 
+  axios.post('http://localhost:2376/events', { type: 'CommentCreated',
+    data: {
+      id: commentId, content, postId: req.params.id
+    }
+  }).catch((err) => {
+    console.log(err.message);
+  });
+
   res.status(201).send({ message: 'Comment created', comments });
+});
+
+// fetch all comments
+app.get('/comments', (req, res) => {
+  res.send(commentsByPostId);
+});
+
+app.post('/events', (req, res) => {
+  console.log('Received Event:', req.body.type);
+
+  res.send({ status: 'OK' });
 });
 
 app.listen(PORT, () => {
