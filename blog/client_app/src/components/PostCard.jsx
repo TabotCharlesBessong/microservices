@@ -10,7 +10,7 @@ const PostCard = ({ post }) => {
         <p className="card-text">Post ID: {post.id}</p>
         
         {/* Comment creation form for this specific post */}
-        <CommentCreate postId={post.id} />
+        <CommentCreate comments={post.comments} />
         
         {/* List of comments for this specific post */}
         <CommentList postId={post.id} />
